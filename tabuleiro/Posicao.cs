@@ -2,10 +2,10 @@
 {
     internal class Posicao
     {
-        public double linha { get; set; }
-        public double coluna { get; set; }
+        public int linha { get; set; }
+        public int coluna { get; set; }
 
-        public Posicao(double linha, double coluna)
+        public Posicao(int linha, int coluna)
         {
             this.linha = linha;
             this.coluna = coluna;
