@@ -30,6 +30,10 @@
 
         public void ColocarPeca(Peca p, Posicao pos)
         {
+            if (ExistePeca(pos) )
+            {
+                throw new TabuleiroException("Já existe uma peça nessa posição!");
+            }
             pecas[pos.linha, pos.coluna] = p;
             p.posicao = pos;
         }
