@@ -40,7 +40,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.DefinirValores(posicao.linha - 1, posicao.coluna);
+                pos.DefinirValores(pos.linha - 1, pos.coluna);
             }
 
             //abaixo
@@ -52,7 +52,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.DefinirValores(posicao.linha + 1, posicao.coluna);
+                pos.DefinirValores(pos.linha + 1, pos.coluna);
             }
 
             //direita
@@ -64,7 +64,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.DefinirValores(posicao.linha, posicao.coluna + 1);
+                pos.DefinirValores(pos.linha, pos.coluna + 1);
             }
 
             //esquerda
@@ -76,7 +76,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.DefinirValores(posicao.linha, posicao.coluna - 1);
+                pos.DefinirValores(pos.linha, pos.coluna - 1);
             }
 
             // ====================
@@ -90,7 +90,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.DefinirValores(posicao.linha - 1, posicao.coluna - 1);
+                pos.DefinirValores(pos.linha - 1, pos.coluna - 1);
             }
 
             //NE
@@ -102,7 +102,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.DefinirValores(posicao.linha - 1, posicao.coluna + 1);
+                pos.DefinirValores(pos.linha - 1, pos.coluna + 1);
             }
 
             //SE
@@ -114,7 +114,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.DefinirValores(posicao.linha + 1, posicao.coluna + 1);
+                pos.DefinirValores(pos.linha + 1, pos.coluna + 1);
             }
 
             //SO
@@ -126,7 +126,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.DefinirValores(posicao.linha + 1, posicao.coluna - 1);
+                pos.DefinirValores(pos.linha + 1, pos.coluna - 1);
             }
             return mat;
 

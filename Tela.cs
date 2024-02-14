@@ -38,7 +38,7 @@ namespace xadrez_console
             Console.Write("Amarelas: ");
             ConsoleColor aux = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Yellow;
-            ImprimirConjuntos(partida.PecasCapturadas(Cor.Preta));
+            ImprimirConjuntos(partida.PecasCapturadas(Cor.Amarela));
             Console.ForegroundColor = aux;
             Console.WriteLine();
         }

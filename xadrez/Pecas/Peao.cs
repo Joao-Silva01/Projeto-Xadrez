@@ -54,7 +54,8 @@ namespace xadrez
                 }
 
                 pos.DefinirValores(posicao.linha - 2, posicao.coluna);
-                if (tab.PosicaoValida(pos) && livre(pos) && qteMovimentos == 0)
+                Posicao p2 = new Posicao(posicao.linha -1, posicao.coluna);
+                if (tab.PosicaoValida(p2) && livre(p2) && tab.PosicaoValida(pos) && livre(pos) && qteMovimentos == 0)
                 {
                     mat[pos.linha, pos.coluna] = true;
                 }
@@ -76,9 +77,10 @@ namespace xadrez
                 {
                     mat[pos.linha, pos.coluna] = true;
                 }
-
+                
                 pos.DefinirValores(posicao.linha + 2, posicao.coluna);
-                if (tab.PosicaoValida(pos) && livre(pos) && qteMovimentos == 0)
+                Posicao p2 = new Posicao(posicao.linha + 1, posicao.coluna);
+                if (tab.PosicaoValida(p2) && livre(p2) && tab.PosicaoValida(pos) && livre(pos) && qteMovimentos == 0)
                 {
                     mat[pos.linha, pos.coluna] = true;
                 }
